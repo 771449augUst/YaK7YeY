@@ -1,5 +1,4 @@
 
-{
  "description": "Marker file indicating this is a repository that defines a Cloud Shell custom image.",
  "projectId": "cloudrun",
  "repoId": "cloud-run-button"
