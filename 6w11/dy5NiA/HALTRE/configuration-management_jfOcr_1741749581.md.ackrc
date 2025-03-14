@@ -2,5 +2,4 @@
 --ignore-dir=tmp/
 --ignore-dir=vendor/
 --ignore-dir=releases/
---ignore-dir=rpmbuild/
 --type-set=mcl:ext:mcl
