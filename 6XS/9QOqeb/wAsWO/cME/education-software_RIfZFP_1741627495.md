@@ -1,2 +1,0 @@
-To install the toolbox, get familiar with the work flow and hit the ground running,
-please read https://github.com/Parrot-Developers/RollingSpiderEdu/blob/master/MIT_MatlabToolbox/media/GettingStarted.pdf
