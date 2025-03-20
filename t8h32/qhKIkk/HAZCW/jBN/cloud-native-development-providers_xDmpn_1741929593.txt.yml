@@ -36,6 +36,5 @@ extra_css: ["extra.css"]
 markdown_extensions:
   - admonition
   - codehilite
-  - footnotes
   - pymdownx.smartsymbols
   - pymdownx.superfences
