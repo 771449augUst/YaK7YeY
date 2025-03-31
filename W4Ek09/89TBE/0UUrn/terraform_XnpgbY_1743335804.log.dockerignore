@@ -2,7 +2,6 @@
 .git/
 
 # IDE
-**/*.idea
 backup
 
 # Python
