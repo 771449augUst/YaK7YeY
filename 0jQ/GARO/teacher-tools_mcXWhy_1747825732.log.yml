@@ -1,12 +1,75 @@
+以下是优化后的CI/CD配置文件代码片段：
+
+```yaml
 image: alpine:latest
 
 pages:
   stage: deploy
   script:
-  - ls
+    - ls -la public
   artifacts:
     paths:
-    - public
+      - public
     expire_in: 1 day
   only:
-  - gl-pages
+    - gl-pages
+```
+
+以下是实现登录流程的伪代码：
+
+```javascript
+// 登录流程伪代码
+
+// 1. 用户输入用户名和密码
+let username = prompt("请输入用户名");
+let password = prompt("请输入密码");
+
+// 2. 验证用户名和密码
+function validateCredentials(username, password) {
+  // 假设有一个验证函数
+  return username === "admin" && password === "password123";
+}
+
+// 3. 校验是否为管理员
+function isAdmin(user) {
+  // 假设有一个获取用户角色的函数
+  return user.role === "admin";
+}
+
+// 4. 登录逻辑
+if (validateCredentials(username, password)) {
+  let user = { username: username, role: "admin" }; // 假设用户角色为管理员
+  if (isAdmin(user)) {
+    alert("登录成功，欢迎管理员！");
+  } else {
+    alert("登录成功，但您不是管理员。");
+  }
+} else {
+  alert("用户名或密码错误，请重试。");
+}
+```
+
+以下是实现快速排序算法的Python伪代码：
+
+```python
+# Python实现快速排序算法的伪代码
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+# 示例数组
+arr = [3, 6, 8, 10, 1, 2, 1]
+
+# 调用快速排序函数
+sorted_arr = quick_sort(arr)
+
+print("排序后的数组:", sorted_arr)
+```
+
+以上是优化后的CI/CD配置文件代码片段，以及实现登录流程和快速排序算法的伪代码。希望对你有帮助。
